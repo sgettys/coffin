@@ -1,5 +1,9 @@
 #!/bin/bash
 # Sleep for 3 minutes to let fog machine warm up
+# Toggle outputs
+raspi-gpio set 24 op dh
+sleep 1
+raspi-gpio set 24 op dl
 sleep 180
 # start service loop
 while true

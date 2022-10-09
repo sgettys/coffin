@@ -1,6 +1,6 @@
 #!/bin/bash
-# Sleep for 3 minutes to let fog machine warm up
-sleep 180
+# Sleep for 1 minute to let fog machine warm up
+sleep 60
 # start service loop
 while true
 do
@@ -9,10 +9,10 @@ do
   sleep 1
   raspi-gpio set 24 op dl
   # let fog build up
-  sleep 5
+  sleep 1
   # Start to open coffin
   raspi-gpio set 23 op dh
-  sleep 5
+  sleep 10
   # Turn off fog
   raspi-gpio set 25 op dh
   sleep 1

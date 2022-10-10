@@ -22,5 +22,5 @@ do
   # Close the coffin
   raspi-gpio set 23 op dl
   # Wait for a minute + close time (~10 seconds)
-  sleep 70
+  sleep 30 
 done
